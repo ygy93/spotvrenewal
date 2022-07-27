@@ -1,0 +1,76 @@
+/* reset */
+* { margin:0; padding:0; }
+li { list-style:none; }
+a { text-decoration:none; color:#fff; }
+img { vertical-align:top; }
+
+html { overflow-x: hidden; } /* 가로 스크롤생성 제거 */
+
+
+
+/* ------------------------인트로 로고------------------------ */
+.intro {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index:10;
+    background: #fff;
+}
+
+.intro h1 {
+    position: relative;
+	left:50%;
+    margin-left: -431.5px;
+    top:50%;
+    margin-top: -150px;
+}
+
+.intro.off {
+    display:none;
+}
+
+/* ------------------------인트로 선택 페이지------------------------ */
+
+/* 흰 색상 올라가는 배경 */
+.slide {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index:9;
+    background:#fff;
+}
+
+/* 스포티비나우 선택창 */
+.select {
+    width: 100vw;
+    height: 100vh;
+    background:url(../images/intro1.jpg) no-repeat center;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+
+/* 스포티비나우 선택창 반투명 흰색 처리 */
+.select ul {
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.7);
+}
+
+.select.on ul {
+    background: rgba(0,0,0,0.3);
+}
+
+
+/* 스포티비나우 글자 이미지 */
+.select ul > li > img {
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left:-320px;
+    margin-top:-88px;
+}
+
+.select.on ul > li > img {
+    filter: invert(100%);
+}
