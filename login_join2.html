@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta property="og:image" content="images/intro_logo.png">
+	<meta property="og:url" content="http://voalffl93.dothome.co.kr">
+	<meta property="og:title" content="SPOTV Now Renewal">
+	<meta property="og:description" content="스포티비 나우 리뉴얼">
+    <title>Login_join_2</title>
+
+    <link rel="stylesheet" href="css/style5.css">
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+    <!-- 헤더 -->
+    <header>
+        <nav>
+            <h1>
+                <a href="login.html">
+                    <img src="images/now-logo.png" alt="스포티비나우 로고">
+                </a>
+            </h1>
+        </nav>
+    </header>
+
+    <!-- 이메일 인증번호 발송 및 확인 -->
+    <section id="cont">
+        <h2 class="blind">메인 콘텐츠 영역</h2>
+        <h3>회원가입</h3>
+        <div class="passbox">
+            <img src="images/triangle-color.png" alt="넘김박스 활성화">
+            <img src="images/triangle-color.png" alt="넘김박스 활성화">
+            <img src="images/triangle.png" alt="넘김박스 비활성화">
+        </div>
+        <p>계정 가입을 위해 이메일 인증을 진행해 주세요</p>
+
+        <div class="form-cert">
+            <form method="post">
+                <div class="email-cert">
+                    <input type="text" id="id" maxlength="15" placeholder="이메일 입력">
+                    <button class="send">인증번호 발송</button>
+                </div>
+
+                <div class="email-check">
+                    <p>인증번호가 발송되었습니다</p>
+                </div>
+
+                <div class="cert-check">
+                    <input type="text" maxlength="6" placeholder="인증번호 입력">
+                    <button class="ok">확인</button>
+                </div>
+
+                <div class="number-check">
+                    <p>인증되었습니다</p>
+                    <p>인증번호가 일치하지 않습니다</p>
+                </div>
+
+                <a href="login_join3.html">
+                    <input type="button" value="다음">
+                </a>
+            </form>
+        </div>
+    </section>
+
+    <!-- 이메일 인증을 완료하지 않을 때 다음 버튼을 누르면 뜨는 팝업창 -->
+    <section id="certf">
+        <h2 class="blind">이메일 비인증한 팝업창</h2>
+        <div id="non-cert">
+            <div class="header">이메일 인증</div>
+            <div class="body">이메일 인증을 완료해 주세요</div>
+            <div class="footer"><button class="btncert">확인</button></div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta property="og:image" content="images/intro_logo.png">
+	<meta property="og:url" content="http://voalffl93.dothome.co.kr">
+	<meta property="og:title" content="SPOTV Now Renewal">
+	<meta property="og:description" content="스포티비 나우 리뉴얼">
+    <title>Login_join_1</title>
+
+    <link rel="stylesheet" href="css/style4.css">
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+    <!-- 헤더 -->
+    <header>
+        <nav>
+            <h1>
+                <a href="login.html">
+                    <img src="images/now-logo.png" alt="스포티비나우 로고">
+                </a>
+            </h1>
+        </nav>
+    </header>
+
+    <!-- 회원가입 약관 동의 체크 -->
+    <section id="cont">
+        <h2 class="blind">메인 콘텐츠 영역</h2>
+        <h3>회원가입</h3>
+        <div class="passbox">
+            <img src="images/triangle-color.png" alt="넘김박스 활성화">
+            <img src="images/triangle.png" alt="넘김박스 비활성화">
+            <img src="images/triangle.png" alt="넘김박스 비활성화">
+        </div>
+        <p>SPOTV NOW 서비스 이용을 위해 이용약관에 동의해 주세요</p>
+
+        <div class="form-in">
+            <form method="post">
+                <div class="agree">
+                    <input type="checkbox" id="agcheck">
+                    <label for="agcheck"></label>
+                    <span>전체 동의합니다</span>
+                </div>
+
+                <div class="age14">
+                    <input type="checkbox" id="14check" class="terms">
+                    <label for="14check"></label>
+                    <span>만 14세 이상 입니다</span>
+                    <span class="est">(필수)</span>
+                </div>
+
+                <div class="use">
+                    <input type="checkbox" id="usecheck" class="terms">
+                    <label for="usecheck"></label>
+                    <span>이용약관</span>
+                    <span>동의합니다</span>
+                    <span class="est">(필수)</span>
+                </div>
+
+                <div class="info">
+                    <input type="checkbox" id="infocheck" class="terms">
+                    <label for="infocheck"></label>
+                    <span>개인정보취급방침</span>
+                    <span>동의합니다</span>
+                    <span class="est">(필수)</span>
+                </div>
+
+                <a href="login_join2.html">
+                    <input type="button" value="다음">
+                </a>
+            </form>
+        </div>
+    </section>
+
+    <!-- 체크박스에 모두 체크하지 않을 시 뜨는 팝업창 -->
+    <section id="check">
+        <h2 class="blind">모든 체크박스 미체크 창</h2>
+        <div id="non-check">
+            <div class="header">약관동의</div>
+            <div class="body">필수항목에 동의해주세요</div>
+            <div class="footer"><button class="btnck">확인</button></div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

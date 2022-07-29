@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta property="og:image" content="images/intro_logo.png">
+	<meta property="og:url" content="http://voalffl93.dothome.co.kr">
+	<meta property="og:title" content="SPOTV Now Renewal">
+	<meta property="og:description" content="스포티비 나우 리뉴얼">
+    <title>Login_join_3</title>
+
+    <link rel="stylesheet" href="css/style6.css">
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+    <!-- 헤더 -->
+    <header>
+        <nav>
+            <h1>
+                <a href="login.html">
+                    <img src="images/now-logo.png" alt="스포티비나우 로고">
+                </a>
+            </h1>
+        </nav>
+    </header>
+
+    <!-- 이메일 인증번호 발송 및 확인 -->
+    <section id="cont">
+        <h2 class="blind">메인 콘텐츠 영역</h2>
+        <h3>회원가입</h3>
+        <div class="passbox">
+            <img src="images/triangle-color.png" alt="넘김박스 활성화">
+            <img src="images/triangle-color.png" alt="넘김박스 활성화">
+            <img src="images/triangle-color.png" alt="넘김박스 활성화">
+        </div>
+        <p>SPOTV NOW 계정으로 사용하실 회원정보를 입력해 주세요</p>
+
+        <div class="form-info">
+            <form method="post">
+                <div class="email-info">
+                    <input type="text" id="id" maxlength="15" placeholder="이메일">
+                </div>
+
+                <div class="email-infop">
+                    <p>이메일 주소를 입력해 주세요</p>
+                </div>
+
+                <div class="pw-info">
+                    <input type="password" placeholder="비밀번호">
+                    <img src="images/on-ic.png" alt="비밀번호 보이기">
+                    <img src="images/off-ic.png" alt="비밀번호 * 처리">
+                </div>
+
+                <div class="pw-infop">
+                    <p>비밀번호를 입력해주세요</p>
+                    <p>영문, 숫자 조합 8~32자 이내로 입력해주세요</p>
+                </div>
+
+                <div class="pw-check">
+                    <input type="password" id="id" placeholder="비밀번호 확인">
+                    <img src="images/on-ic.png" alt="비밀번호 보이기">
+                    <img src="images/off-ic.png" alt="비밀번호 * 처리">
+                </div>
+
+                <div class="pw-checkp">
+                    <p>비밀번호를 입력해주세요</p>
+                </div>
+
+                <div class="name-info">
+                    <input type="text" placeholder="이름">
+                </div>
+
+                <div class="name-infop">
+                    <p>이름을 입력해 주세요</p>
+                    <p>한글, 영문 2 ~ 15자 이내로 입력해 주세요</p>
+                </div>
+
+                <div class="birth-info">
+                    <input type="text" placeholder="생년월일">
+
+                    <div class="gender">
+                        <div class="genderM">
+                            <input type="checkbox" id="genderM">
+                            <label for="genderM"></label>
+                            <span>남자</span>
+                        </div>
+
+                        <div class="genderW">
+                            <input type="checkbox" id="genderW">
+                            <label for="genderW"></label>
+                            <span>여자</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="birth-infop">
+                    <p>생년월일을 입력해 주세요 / 성별을 선택해 주세요</p>
+                    <p>예시) 1999년 01월 01일 → 19990101로 입력해 주세요</p>
+                </div>
+
+                <div class="inter-info">
+                    <input type="text" placeholder="선호종목">
+                </div>
+
+                <div class="inter-infop">
+                    <p>선호종목을 선택해 주세요</p>
+                    <p>영문, 숫자 조합 8~32자 이내로 입력해주세요</p>
+                </div>
+
+                <a href="login_join4.html">
+                    <input type="button" value="가입완료">
+                </a>
+            </form>
+        </div>
+    </section>
+
+    <!-- 이메일 인증을 완료하지 않을 때 다음 버튼을 누르면 뜨는 팝업창 -->
+    <section id="certf">
+        <h2 class="blind">이메일 비인증한 팝업창</h2>
+        <div id="non-cert">
+            <div class="header">이메일 인증</div>
+            <div class="body">이메일 인증을 완료해 주세요</div>
+            <div class="footer"><button class="btncert">확인</button></div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
