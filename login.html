@@ -25,12 +25,50 @@
         <div class="form">
             <form method="post">
                 <div class="id">
-                    <input type="text" id="id">
+                    <input class="user_id" type="text" id="id" minlength="1" placeholder="이메일">
                 </div>
                 <div class="pw">
-                    <input type="password" id="pw">
+                    <input class="user_pw" type="password" id="pw" minlength="1" placeholder="비밀번호">
+                    <img src="images/on-ic.png" alt="비밀번호 보이기">
+                    <img src="images/off-ic.png" alt="비밀번호 * 처리">
+                </div>
+
+                <div class="logcheck">
+                    <input type="checkbox" id="logcheck">
+                    <label for="logcheck"></label>
+                    <span>로그인 유지</span>
+                </div>
+                <div class="emailcheck">
+                    <input type="checkbox" id="emailcheck">
+                    <label for="emailcheck"></label>
+                    <span>이메일 저장</span>
+                </div>
+
+                <div class="loginbtn">
+                    <input type="button" value="로그인">
+                </div>
+
+                <div class="search">
+                    <a href="login_id.html">아이디 찾기</a>
+                    <span>|</span>
+                    <a href="login_pw.html">비밀번호 찾기</a>
+                </div>
+
+                <div class="join">
+                    <span>아직 회원이 아니세요 ?</span>
+                    <span><a href="login_join.html">회원가입</a></span>
                 </div>
             </form>
+        </div>
+    </section>
+
+    <!-- 로그인 실패창 -->
+    <section id="fail">
+        <h2 class="blind">로그인 실패창</h2>
+        <div id="popup">
+            <div class="header">로그인 실패</div>
+            <div class="body">이메일 또는 비밀번호를 확인해주세요</div>
+            <div class="footer"><button class="btnf">확인</button></div>
         </div>
     </section>
 
