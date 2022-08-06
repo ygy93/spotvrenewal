@@ -89,7 +89,13 @@ header nav {
 }
 
 
-input[type="button"] {
+#cont .form-info .email-info input {
+    width: 280px;
+    margin-right: 10px;
+}
+
+
+button[type="submit"] {
     width: 390px;
     font-size: 16px;
     font-weight: 900;
@@ -191,18 +197,18 @@ input[type="button"] {
 }
 
 /* 폼 체크박스 이미지로 변환 */
-input[type="checkbox"]+label {
+input[type="radio"]+label {
     display: inline-block;
     width: 18px;
     height: 18px;
     background: url(../images/ic-uncheck.png) no-repeat 0 0px / contain;
 }
 
-input[type='checkbox']:checked+label {
+input[type='radio']:checked+label {
     background: url(../images/ic-check.png) no-repeat 0 0px / contain;
 }
 
-input[type="checkbox"] {
+input[type="radio"] {
     display: none;
 }
 

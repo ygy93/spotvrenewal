@@ -23,12 +23,12 @@
         <h2 class="blind">로그인 입력 정보</h2>
         <img src="images/now-logo.png" alt="spotv now logo">
         <div class="form">
-            <form method="post">
+            <form action="main.html" method="post">
                 <div class="id">
-                    <input class="user_id" type="text" id="id" minlength="1" placeholder="이메일">
+                    <input class="user_id info-input" type="text" id="id" placeholder="아이디">
                 </div>
                 <div class="pw">
-                    <input class="user_pw" type="password" id="pw" minlength="1" placeholder="비밀번호">
+                    <input class="user_pw info-input" type="password" id="pw" placeholder="비밀번호">
                     <img src="images/on-ic.png" alt="비밀번호 보이기">
                     <img src="images/off-ic.png" alt="비밀번호 * 처리">
                 </div>
@@ -45,9 +45,7 @@
                 </div>
 
                 <div class="loginbtn">
-                    <a href="main.html">
-                        <input type="button" value="로그인">
-                    </a>
+                    <button type="submit">로그인</button>
                 </div>
 
                 <div class="search">

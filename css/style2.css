@@ -81,7 +81,7 @@ header nav {
     margin-top: 80px;
 }
 
-input[type="button"] {
+button[type="submit"] {
     width: 100%;
     font-size: 16px;
     font-weight: 900;

@@ -37,13 +37,14 @@
         <p>SPOTV NOW 계정으로 사용하실 회원정보를 입력해 주세요</p>
 
         <div class="form-info">
-            <form method="post">
+            <form action="login_join4.html" method="post">
                 <div class="email-info">
-                    <input type="text" id="id" maxlength="15" placeholder="이메일">
+                    <input type="text" id="id" maxlength="15" placeholder="아이디">
+                    <button class="overlap">중복 확인</button>
                 </div>
 
                 <div class="email-infop">
-                    <p>이메일 주소를 입력해 주세요</p>
+                    <p>아이디를 입력해 주세요</p>
                 </div>
 
                 <div class="pw-info">
@@ -81,13 +82,13 @@
 
                     <div class="gender">
                         <div class="genderM">
-                            <input type="checkbox" id="genderM">
+                            <input type="radio" id="genderM" name="genderCk">
                             <label for="genderM"></label>
                             <span>남자</span>
                         </div>
 
                         <div class="genderW">
-                            <input type="checkbox" id="genderW">
+                            <input type="radio" id="genderW" name="genderCk">
                             <label for="genderW"></label>
                             <span>여자</span>
                         </div>
@@ -108,9 +109,7 @@
                     <p>영문, 숫자 조합 8~32자 이내로 입력해주세요</p>
                 </div>
 
-                <a href="login_join4.html">
-                    <input type="button" value="가입완료">
-                </a>
+                <button type="submit">가입완료</button>
             </form>
         </div>
     </section>

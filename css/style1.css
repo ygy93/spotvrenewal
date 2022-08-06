@@ -140,7 +140,7 @@ input[type="checkbox"] {
     margin: 40px 0 120px;
 }
 
-input[type="button"] {
+button[type="submit"] {
     width: 100%;
     font-size: 14px;
     font-weight: bold;
@@ -153,6 +153,7 @@ input[type="button"] {
     opacity: 0.3;
     cursor: pointer;
 }
+
 
 
 #input .form .search {

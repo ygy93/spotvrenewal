@@ -73,7 +73,7 @@ header nav {
 
 
 
-input[type="button"] {
+button[type="submit"] {
     width: 390px;
     font-size: 16px;
     font-weight: 900;

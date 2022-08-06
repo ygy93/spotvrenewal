@@ -29,7 +29,7 @@ $(".btnx").click(function(){
 });
 
 
-// 비밀번호 눈동자이미지 클릭 시 이미지 변환 ( ----------미완성---------- )
+// 비밀번호 눈동자이미지 클릭 시 이미지 변환
 $(".form .pw img").click(function(){
     $(".form .pw img:nth-of-type(2)").toggleClass("on");
 });
@@ -43,15 +43,44 @@ $(".form-info .pw-check img").click(function(){
 });
 
 
+// 비밀번호 눈동자이미지 클릭 시 비밀번호 **** 처리 ON/OFF
+$(".form .pw img:nth-of-type(2)").click(function(){
+    $(".pw .user_pw").prop("type","text");
+});
+
+$(".form .pw img:nth-of-type(1)").click(function(){
+    $(".pw .user_pw").prop("type","password");
+});
+
+
+$(".form-info .pw-info img:nth-of-type(2)").click(function(){
+    $(".form-info .pw-info input").prop("type","text");
+});
+
+$(".form-info .pw-info img:nth-of-type(1)").click(function(){
+    $(".form-info .pw-info input").prop("type","password");
+});
+
+
+$(".form-info .pw-check img:nth-of-type(2)").click(function(){
+    $(".form-info .pw-check input").prop("type","text");
+});
+
+$(".form-info .pw-check img:nth-of-type(1)").click(function(){
+    $(".form-info .pw-check input").prop("type","password");
+});
+
 
 
 // 아이디, 비밀번호칸 정보입력 시 버튼 활성화 ( ----------미완성---------- )
-$("input").on("input", function(){
+$(".id input, .pw input").on("input", function(){
     var user_id = $(".user_id").val();
     var user_pw = $(".user_pw").val();
 
     if ( user_id == "" || user_pw == "" ){
-        $(".loginbtn input").css({"opacity":"1"});
+        $(".loginbtn button").css({"opacity":"1"});
+    } else {
+        $(".loginbtn button").css({"opacity":"inherit"});
     }
 });
 
@@ -98,12 +127,15 @@ $("input").on("input", function(){
     var user_email = $(".user_email").val();
 
     if ( user_email == ""){
-        $(".idsc-btn input").css({"opacity":"1"});
+        $(".idsc-btn button").css({"opacity":"1"});
     }
 });
 
 
-// 이메일을 적으면 이메일란 바닥 선 색상 활성화 ( ----------미완성---------- )
+
+
+
+// 이메일을 적으면 이메일란 바닥 선 색상 활성화
 $(".id-sc input").click(function(){
     $(this).toggleClass("on");
 });
@@ -114,16 +146,6 @@ $(".form-cert form > div input").click(function(){
 
 $(".form-info form > div input").click(function(){
     $(this).toggleClass("on");
-});
-
-
-
-$("input").on("input", function(){
-    var user_email = $(".user_email").val();
-
-    if ( user_email == ""){
-        $(".pwsc-btn input").css({"opacity":"1"});
-    }
 });
 
 
@@ -161,9 +183,6 @@ $(".form-in form > div").on("click", ".terms", function() {
 });
 
 
-
-
-// 인증번호 발송 버튼 클릭 시 발송 메세지 나타내기 ( ----------미완성---------- )
 
 
 
