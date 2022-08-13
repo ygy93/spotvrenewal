@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Main</title>
-    <link rel="stylesheet" href="css2/style.css">
+    <title>User</title>
+    <link rel="stylesheet" href="css2/style3.css">
 
     <script src="js/jquery-1.11.1.min.js"></script>
 </head>
@@ -63,10 +63,91 @@
         </nav>
     </header>
 
-    <!-- 라이브영상 콘텐츠 -->
-    <section id="live">
-        <h2 class="blind">라이브영상</h2>
-        <img src="images2/sche1.png" alt="라이브정보">
+    <!-- 회원정보 -->
+    <section id="cont1">
+        <h2 class="blind">마이페이지 유저 정보</h2>
+        <div class="wrap">
+            <h3>회원정보 관리</h3>
+        </div>
+    </section>
+
+    <!-- 유저 인사 문구 -->
+    <section id="cont2">
+        <h2 class="blind">유저 인사 문구</h2>
+        <div class="wrap">
+            <div class="user_greet">
+                <figure>
+                    <img src="images2/ic-user-large.png" alt="큰유저프로필사진">
+                    <figcaption><span>양근영</span>&nbsp;님 안녕하세요<br>
+                    나의 정보를 확인하고 관리해 주세요</figcaption>
+                </figure>
+            </div>
+
+            <!-- 계정 로그인 상태 -->
+            <div class="id_info">
+                <div class="title"><span>계정 정보</span></div>
+                <div class="content"><span>로그인 중</span></div>
+            </div>
+
+            <!-- 프로필 정보, 연락처 -->
+            <div class="profile_info">
+                <div class="title"><span>프로필 정보</span></div>
+                <div class="content">
+                    <ul>
+                        <li>이름</li>
+                        <li>생년월일</li>
+                        <li>선호종목</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <ul>
+                        <li>양*영</li>
+                        <li>199*.**.** / 남</li>
+                        <li>축구</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contact">
+                <div class="title"><span>연락처</span></div>
+                <div class="content">
+                    <ul>
+                        <li>휴대폰 번호</li>
+                        <li>이메일 주소</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <ul>
+                        <li>010-7228-****</li>
+                        <li>voal*****@naver.com</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- 채팅 프로필 -->
+            <div class="chat_prof">
+                <div class="title"><span>채팅 프로필</span></div>
+                <div class="content">
+                    <ul>
+                        <li>닉네임</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <ul>
+                        <li>닉네임을 입력해 주세요</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- 회원탈퇴 -->
+            <div class="joinout">
+                <form action="login.html" method="post">
+                    <button type="submit">회원탈퇴</button>
+                </form>
+            </div>
+        </div>
     </section>
 
     <!-- 웹사이트 정보 -->

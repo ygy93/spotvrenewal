@@ -1,0 +1,256 @@
+/* webfont */
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+/* reset */
+* { margin:0; padding:0; }
+li { list-style:none; }
+a { text-decoration:none; color:#fff; }
+img { vertical-align:top; }
+
+html { overflow-x: hidden; }
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #102D61;
+}
+
+.wrap { width:1200px; margin:0 auto; position:relative; }
+.wrap:after, ul:after, .cl:after { content:""; clear:both; display: block; }
+.blind { position:absolute; left:-9999px; width:0; height:0; font-size:0; overflow:hidden; }
+
+/* ------------------------최상단 프로모션 이미지------------------------ */
+.promotion {
+    position: relative;
+    top:0;
+    left:0;
+    width: 100%;
+    height:33vh;
+    background: url(../images2/main_header.jpg) no-repeat center;
+}
+
+.promotion img {
+    position: absolute;
+    top:10%;
+    right:10%;
+    cursor: pointer;
+}
+
+
+/* ------------------------TOP 스크롤 버튼------------------------ */
+.topscroll {
+    position: fixed;
+    bottom:50px;
+    right:150px;
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50px;
+    border:3px solid #2affcc;
+    cursor: pointer;
+    opacity: 0;
+    transition:0.3s;
+}
+
+.topscroll span {
+    font-size: 30px;
+    color:#2affcc;
+    position: relative;
+    top:6px;
+}
+
+
+/* ------------------------헤더, 내비게이션바------------------------ */
+header {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    z-index: 2000;
+    background: #0E2653;
+}
+
+header nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1200px;
+}
+
+header nav h1 {
+    height: 28px;
+}
+
+header nav #snb li {
+    float:left;
+}
+
+header.fix {
+    position: fixed;
+    top:0;
+}
+
+header #gnb {
+    margin: 0 50px;
+}
+
+header #gnb li a {
+    color:#2affcc;
+}
+
+header #snb {
+    margin-left: 50%;
+}
+
+header #snb li:nth-of-type(2) {
+    margin: 0 50px;
+}
+
+header #snb span {
+    color:#fff;
+}
+
+header #snb li:last-of-type {
+    cursor: pointer;
+    position: relative;
+    height: 24px;
+}
+
+header #snb li:last-of-type img:last-of-type {
+    position: relative;
+    top:10px;
+}
+
+
+
+header nav #snb .user_icon .user_info {
+    visibility:hidden;
+    width: 136px;
+    height: 242px;
+    background: #243F7D;
+    position: relative;
+    top:28px;
+    right:40px;
+    text-align: center;
+    border-radius:5px;
+    color:#fff;
+}
+
+header nav #snb .user_icon .user_info.on {
+    visibility:visible;
+}
+
+header nav #snb .user_icon .user_info li {
+    width: 100%;
+    margin: 0;
+}
+
+header nav #snb .user_icon .user_info img {
+    position: relative;
+    top:2px;
+}
+
+header nav #snb .user_icon .user_info > li:nth-of-type(2) {
+    margin: 15px 0;
+    font-size:20px;
+}
+
+header nav #snb .user_icon .user_info > li:last-of-type {
+    height: 133px;
+}
+
+header nav #snb .user_icon .user_info ul {
+    padding: 15px 0;
+    border-top:1px solid #666;
+}
+
+header nav #snb .user_icon .user_info .user_item li {
+    height: 34px;
+}
+
+header nav #snb .user_icon .user_info .user_item li a {
+    width: 136px;
+    height: 34px;
+    display: block;
+    line-height:2;
+}
+
+header nav #snb .user_icon .user_info .user_item li a:hover {
+    background-color:rgba(42,255,204,0.5);
+}
+
+/* ------------------------섹션 라이브 영상------------------------ */
+#live {
+    width: 100%;
+    height: 1200px;
+    position: relative;
+}
+
+#live img {
+    width: 200px;
+    height: 200px;
+}
+
+
+/* ------------------------푸터, 웹사이트 정보------------------------ */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: #0E2653;
+    font-style: normal;
+    color:#aaa;
+    font-size:11px;
+    height: 206px;
+    border-top: 1px solid #666;
+}
+
+footer ul {
+    margin-bottom: 16px;
+    font-size:13px;
+}
+
+footer ul li a:hover {
+    color:#fff;
+}
+
+footer ul li {
+    float:left;
+    margin-right: 30px;
+}
+
+footer ul li:last-of-type {
+    margin-right: 0;
+}
+
+footer ul li a {
+    color:#aaa;
+}
+
+footer ul li:nth-of-type(3) a {
+    color:#fff;
+}
+
+footer address {
+    font-style: normal;
+    font-size:12px;
+}
+
+footer p:nth-of-type(2) {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Main</title>
-    <link rel="stylesheet" href="css2/style.css">
+    <title>Mypage</title>
+    <link rel="stylesheet" href="css2/style1.css">
 
     <script src="js/jquery-1.11.1.min.js"></script>
 </head>
@@ -63,10 +63,52 @@
         </nav>
     </header>
 
-    <!-- 라이브영상 콘텐츠 -->
-    <section id="live">
-        <h2 class="blind">라이브영상</h2>
-        <img src="images2/sche1.png" alt="라이브정보">
+    <!-- 마이페이지 배너 -->
+    <section id="banner">
+        <h2 class="blind">마이페이지 배너</h2>
+        <img src="images2/purchase-banner.png" alt="마이페이지 배너">
+    </section>
+
+    <!-- 마이페이지 유저 정보 -->
+    <section id="cont1">
+        <h2 class="blind">마이페이지 유저 정보</h2>
+        <div class="wrap">
+            <figure class="profile">
+                <img src="images2/profile-ic.png" alt="유저프로필사진">
+                <figcaption>양근영<span>님 / 로그인 중</span></figcaption>
+            </figure>
+
+            <figure class="ticket">
+                <img src="images2/ticket-ic.png" alt="이용권티켓">
+                <figcaption>구매한 이용권이 없습니다.</figcaption>
+            </figure>
+
+            <div class="pref">
+                <span>선호 종목</span>
+                <span>축구</span>
+            </div>
+
+            <figure class="myinfo">
+                <img src="images2/ic-setting.png" alt="회원정보아이콘">
+                <figcaption><a href="user.html">회원정보</a></figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- 이용권 관리, 1:1 문의 -->
+    <section id="cont2">
+        <h2 class="blind">이용권 관리</h2>
+        <div class="wrap">
+            <ul>
+                <li><a href="mypage.html">이용권 관리</a></li>
+                <li><a href="qna.html">1:1 문의</a></li>
+            </ul>
+
+            <div class="pass">
+                <span>이용중인 이용권이 없습니다.</span>
+                <button type="button" onclick="location.href='ticket.html'">이용권 구매하기</button>
+            </div>
+        </div>
     </section>
 
     <!-- 웹사이트 정보 -->
