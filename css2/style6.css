@@ -182,245 +182,182 @@ header nav #snb .user_icon .user_info .user_item li a:hover {
 
 
 
-/* ------------------------회원정보------------------------ */
+/* ------------------------고객센터 1:1 문의, FAQ------------------------ */
 #cont1 {
     width: 100%;
-    height: 162px;
+    height: 175px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
     flex-direction:column;
     background-color: #1C3161;
     border-bottom: 1px solid #666;
 }
 
-#cont1 .wrap h3 {
+#cont1 .wrap ul li {
+    float:left;
+    font-size: 22px;
     color:#fff;
+    margin-right: 60px;
+    position: relative;
+    top:12px;
+}
+
+#cont1 .wrap ul li a {
+    color:#2affcc;
+    display: block;
+    height: 40px;
+}
+
+#cont1 .wrap ul .title {
     font-size: 36px;
+    font-weight: 600;
+    position: static;
+}
+
+/* ------------------------1:1 문의, FAQ 링크------------------------ */
+#cont2 {
+    width: 100%;
+    height: 520px;
+    padding-top: 60px;
+    color:#fff;
 }
 
 
 
-/* ------------------------유저 인사 문구------------------------ */
-#cont2 .wrap .user_greet {
-    display: flex;
-    align-items:flex-start;
-    justify-content:flex-start;
-    flex-direction:column;
+#cont2 .wrap {
+    padding-bottom: 60px;
+    border-bottom: 1px solid #666;
+}
+
+/* ------------------------주의사항------------------------ */
+#cont3 {
+    width: 100%;
+    height: 700px;
     padding: 60px 0;
-    border-bottom: 1px solid #666;
-}
-
-#cont2 .wrap .user_greet img {
-    width: 68px;
-    height: 68px;
-    margin-right: 16px;
-}
-
-#cont2 .wrap .user_greet figure figcaption {
-    display: inline-block;
-    color:#888;
-    font-size: 20px;
-}
-
-#cont2 .wrap .user_greet figure figcaption span {
-    color:#fff;
-    font-size: 24px;
-}
-
-
-/* ------------------------계정 로그인 상태------------------------ */
-#cont2 .wrap .id_info {
     display: flex;
-    align-items:center;
-    justify-content:flex-start;
-    flex-direction:row;
-    padding: 30px 0;
-    border-bottom: 1px solid #666;
-}
-
-#cont2 .wrap .title {
-    text-align: right;
-    width: 134px;
-}
-
-#cont2 .wrap .content {
-    margin-left: 80px;
-    text-align: left;
-}
-
-#cont2 .wrap .title span {
-    font-size: 20px;
-    color:#fff;
-}
-
-#cont2 .wrap .id_info .content span {
-    font-size: 14px;
-    color:#888;
-}
-
-
-/* ------------------------프로필 정보, 연락처------------------------ */
-#cont2 .wrap .Modify {
-    position: absolute;
-    top:36%;
-    right:0;
-    z-index: 1500;
-    background:url(../images2/modify.png) no-repeat center;
-    width: 100px;
-    height: 28px;
-    border:0;
-    outline: 0;
-    cursor: pointer;
-}
-
-#cont2 .wrap .Modify-end {
-    position: absolute;
-    top:36%;
-    right:0;
-    z-index: 1500;
-    background:url(../images2/complete_modify.png) no-repeat center;
-    width: 100px;
-    height: 28px;
-    border:0;
-    outline: 0;
-    cursor: pointer;
-    display: none;
-}
-
-#cont2 .wrap .Modify-cancel {
-    position: absolute;
-    top:36%;
-    right:10%;
-    z-index: 1500;
-    background:url(../images2/cancel.png) no-repeat center;
-    width: 100px;
-    height: 28px;
-    border:0;
-    outline: 0;
-    cursor: pointer;
-    display: none;
-}
-
-
-
-#cont2 .wrap .profile_info {
-    display: flex;
-    justify-content:flex-start;
-    flex-direction:row;
-    padding: 30px 0;
-}
-
-#cont2 .wrap .profile_info .content .contlabel {
-    display: inline-block;
-    width: 52px;
-}
-
-#cont2 .wrap .profile_info .content .contlabel li {
-    color:#fff;
-    font-size: 14px;
-    margin-bottom: 50px;
-}
-
-#cont2 .wrap .profile_info .content .contlabel li:last-of-type {
-    margin-bottom: 0;
-}
-
-
-
-#cont2 .wrap .profile_info .content .continput {
-    display: inline-block;
-}
-
-#cont2 .wrap .profile_info .content .continput li {
-    color:#888;
-    font-size: 14px;
-    margin-left: 114px;
-    margin-bottom: 50px;
-}
-
-#cont2 .wrap .profile_info .content .continput li:last-of-type {
-    margin-bottom: 0;
-}
-
-#cont2 .wrap .profile_info .content .continput li input {
-    background-color: #102D61;
-    border:0;
-    outline: 0;
-    color:#888;
-}
-
-
-
-
-#cont2 .wrap .contact {
-    display: flex;
-    justify-content:flex-start;
-    flex-direction:row;
-    padding-top: 30px;
-    border-bottom: 1px solid #666;
-}
-
-#cont2 .wrap .contact .content ul li {
-    color:#fff;
-    font-size: 14px;
-    margin-bottom: 50px;
-}
-
-#cont2 .wrap .contact .item ul li {
-    color:#888;
-    font-size: 14px;
-    margin-left: 100px;
-    margin-bottom: 50px;
-}
-
-
-
-/* ------------------------채팅 프로필------------------------ */
-#cont2 .wrap .chat_prof {
-    display: flex;
-    justify-content:flex-start;
-    flex-direction:row;
-    padding: 30px 0;
-    border-bottom: 1px solid #666;
-}
-
-#cont2 .wrap .chat_prof .content ul li {
-    color:#fff;
-    font-size: 14px;
-    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction:column;
 }
 
-#cont2 .wrap .chat_prof .item ul li {
+#cont3 .wrap .service {
+    margin-bottom: 20px;
+}
+
+#cont3 .wrap .service figcaption {
+    font-size: 18px;
+    font-weight: 500;
+    color:#ddd;
+    margin-left: 6px;
+    display: inline-block;
+}
+
+#cont3 .wrap .contbox1 {
+    margin-bottom: 80px;
+}
+
+#cont3 .wrap .contbox1 ul li {
     color:#888;
     font-size: 14px;
-    margin-left: 130px;
-    display: flex;
-    flex-direction:column;
-    text-decoration: underline;
+    list-style: inherit;
+    position: relative;
+    left:20px;
+    line-height: 2;
+}
+
+#cont3 .wrap .sell {
+    margin-bottom: 20px;
+}
+
+#cont3 .wrap .sell figcaption {
+    font-size: 18px;
+    font-weight: 500;
+    color:#ddd;
+    margin-left: 6px;
+    display: inline-block;
+}
+
+#cont3 .wrap .contbox2 ul li {
+    color:#888;
+    font-size: 14px;
+    list-style: inherit;
+    position: relative;
+    left:20px;
+    line-height: 2;
 }
 
 
-/* ------------------------회원탈퇴------------------------ */
-#cont2 .wrap .joinout {
-    margin: 40px 0 80px 0;
-    display: flex;
-    justify-content:flex-end;
+
+/* ------------------------이용권 구매 확인 팝업창------------------------ */
+#selltk {
+    position: fixed;
+    z-index:3000;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    top:0;
+    left:0;
+    visibility: hidden;
+    /* 입력한 아이디, 비밀번호의 정보가 틀린 시 visibility: visible; */
 }
 
-#cont2 .wrap .joinout form button {
-    width: 120px;
-    height: 32px;
-    font-weight: 800;
+#selltk #popup {
+    width: 380px;
+    height: 240px;
+    background-color: #222;
+    border-radius: 5px;
+    position: relative;
+    left:50%;
+    margin-left: -190px;
+    top:50%;
+    margin-top: -120px;
+}
+
+#selltk #popup .header {
+    color:#cfcfcf;
+    font-size: 16px;
+    width: 380px;
+    height: 60px;
+    border-bottom: 1px solid #414141;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#selltk #popup .body {
+    color:#cfcfcf;
+    font-size: 16px;
+    width: 380px;
+    height:120px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#selltk #popup .footer {
+    color:#cfcfcf;
+    font-size: 16px;
+    width: 380px;
+    height: 60px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+
+#selltk #popup .footer button {
+    border:1px solid #cfcfcf;
+    color:#cfcfcf;
+    font-size: 14px;
+    padding: 10px 80px;
     border-radius: 50px;
-    outline: 0;
-    border: 0;
-    border:1px solid #fff;
-    background-color: #0E2653;
-    color:#fff;
+    background-color: #222;
+    position: relative;
+    top:-10px;
     cursor: pointer;
 }
+
+
 
 
 

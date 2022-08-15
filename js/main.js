@@ -96,3 +96,33 @@
     });
 
 
+// 회원정보 수정하기 버튼 누르면 수정완료, 취소 버튼이 나타나며 input readonly 비활성화
+    $(".Modify").click(function(){
+        document.getElementById('profname').readOnly = false;
+        document.getElementById('profbirth').readOnly = false;
+        document.getElementById('profpre').readOnly = false;
+
+        $(".Modify-end").css({"display":"block"});
+        $(".Modify-cancel").css({"display":"block"});
+        $(".continput li input").css({"background-color":"#0E2653","color":"#fff"});
+    });
+
+
+// 수정완료를 누르면 적용, 취소를 누르면 초기화되며 input readonly 활성화
+    $(".Modify-end, .Modify-cancel").click(function(){
+        document.getElementById('profname').readOnly = true;
+        document.getElementById('profbirth').readOnly = true;
+        document.getElementById('profpre').readOnly = true;
+
+        $(".Modify-end").css({"display":"none"});
+        $(".Modify-cancel").css({"display":"none"});
+        $(".continput li input").css({"background-color":"#102D61","color":"#888"});
+    });
+
+
+
+
+
+
+
+

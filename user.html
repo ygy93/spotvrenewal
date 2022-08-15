@@ -39,7 +39,7 @@
                     <a href="ticket.html">이용권</a>
                 </li>
                 <li>
-                    <a href="#">고객센터</a>
+                    <a href="cs.html">고객센터</a>
                 </li>
                 <li class="user_icon">
                     <img src="images2/man-ic.png" alt="유저아이콘">
@@ -90,21 +90,39 @@
             </div>
 
             <!-- 프로필 정보, 연락처 -->
+            <button type="button" class="Modify"></button>
+            <button type="button" class="Modify-end"></button>
+
             <div class="profile_info">
                 <div class="title"><span>프로필 정보</span></div>
                 <div class="content">
-                    <ul>
-                        <li>이름</li>
-                        <li>생년월일</li>
-                        <li>선호종목</li>
-                    </ul>
-                </div>
-                <div class="item">
-                    <ul>
-                        <li>양*영</li>
-                        <li>199*.**.** / 남</li>
-                        <li>축구</li>
-                    </ul>
+                    <form action="" method="post" autocomplete="off">
+                        <ul class="contlabel">
+                            <li>
+                                <label for="profname">이름</label>
+                            </li>
+                            <li>
+                                <label for="profbirth">생년월일</label>
+                            </li>
+                            <li>
+                                <label for="profpre">선호종목</label>
+                            </li>
+                        </ul>
+
+                        <input type="reset" class="Modify-cancel" value="">
+
+                        <ul class="continput">
+                            <li>
+                                <input type="text" id="profname" value="양*영" readonly>
+                            </li>
+                            <li>
+                                <input type="text" id="profbirth" value="199*.**.** / 남" readonly>
+                            </li>
+                            <li>
+                                <input type="text" id="profpre" value="축구" readonly>
+                            </li>
+                        </ul>
+                    </form>
                 </div>
             </div>
 
