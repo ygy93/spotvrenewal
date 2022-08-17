@@ -185,7 +185,7 @@ header nav #snb .user_icon .user_info .user_item li a:hover {
 /* ------------------------고객센터 1:1 문의, FAQ------------------------ */
 #cont1 {
     width: 100%;
-    height: 175px;
+    height: 160px;
     display: flex;
     align-items: center;
     justify-content:center;
@@ -218,148 +218,245 @@ header nav #snb .user_icon .user_info .user_item li a:hover {
 /* ------------------------1:1 문의, FAQ 링크------------------------ */
 #cont2 {
     width: 100%;
-    height: 520px;
-    padding-top: 60px;
+    height: auto;
+    padding-top: 40px;
     color:#fff;
 }
 
-
-
 #cont2 .wrap {
-    padding-bottom: 60px;
+    padding-bottom: 40px;
     border-bottom: 1px solid #666;
 }
 
-/* ------------------------주의사항------------------------ */
-#cont3 {
-    width: 100%;
-    height: 700px;
-    padding: 60px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction:column;
-}
-
-#cont3 .wrap .service {
-    margin-bottom: 20px;
-}
-
-#cont3 .wrap .service figcaption {
-    font-size: 18px;
-    font-weight: 500;
-    color:#ddd;
-    margin-left: 6px;
+#cont2 .wrap .cslist {
+    border:2px solid #888;
+    border-radius: 50px;
+    padding: 6px 0;
     display: inline-block;
 }
 
-#cont3 .wrap .contbox1 {
+#cont2 .wrap .cslist li {
+    float:left;
+    margin-right: 10px;
+    padding: 0 30px;
+}
+
+#cont2 .wrap .cslist li:last-of-type {
+    margin-right: 0;
+}
+
+#cont2 .wrap .cslist li a {
+    font-size: 16px;
+    width: inherit;
+}
+
+#cont2 .wrap .cslist li:last-of-type a {
+    color:#888;
+}
+
+
+
+/* ------------------------1:1 문의 폼------------------------ */
+#cont3 {
+    width: 100%;
+    padding: 60px 0;
+}
+
+#cont3 .wrap form {
+    width: 100%;
+    height: auto;
+}
+
+#cont3 .wrap form > div {
+    color:#ddd;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    flex-flow: row nowrap;
+    flex-direction:row;
+    margin-bottom: 30px;
+}
+
+#cont3 .wrap form > div label {
+    width: 60px;
+    text-align: right;
+    margin-right: 55px;
+    font-size: 15px;
+}
+
+#cont3 .wrap form .csname input {
+    background-color: #102D61;
+    border:0;
+    outline: 0;
+    color:#ddd;
+    width: 280px;
+    height: 18px;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+
+
+#cont3 .wrap form .csemail input {
+    background-color: #0E2653;
+    width: 458px;
+    height: 28px;
+    border:1px solid #888;
+    outline: 0;
+    padding: 5px 10px;
+    color:#ddd;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+#cont3 .wrap form .csemail input:hover, #cont3 .wrap form .csemail input:focus {
+    border:1px solid #2affcc;
+}
+
+
+
+
+#cont3 .wrap form .csemail span {
+    font-size: 15px;
+    color:#888;
+    margin-left: 30px;
+}
+
+#cont3 .wrap form .cstitle select {
+    background-color: #0E2653;
+    padding: 5px 10px;
+    width: 230px;
+    height: 40px;
+    color:#ddd;
+    outline: 0;
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+#cont3 .wrap form .cstitle .topic option:nth-of-type(1) {
+    display: none;
+}
+
+#cont3 .wrap form .cstitle .subtopic option:nth-of-type(1) {
+    display: none;
+}
+
+
+
+
+#cont3 .wrap form .cstitle select:hover, #cont3 .wrap form .cstitle select:focus {
+    border:1px solid #2affcc;
+}
+
+.subtopic {
+    display: block;
+}
+
+
+/*
+.useticket {
+    display: none;
+}
+
+.userid {
+    display: none;
+}
+*/
+
+#cont3 .wrap form .cstitle2 {
+    justify-content:flex-end;
+}
+
+#cont3 .wrap form .cstitle2 input {
+    background-color: #0E2653;
+    width: 1063px;
+    height: 28px;
+    border:1px solid #888;
+    outline: 0;
+    padding: 5px 10px;
+    color:#ddd;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+#cont3 .wrap form .cstitle2 input:hover, #cont3 .wrap form .cstitle2 input:focus {
+    border:1px solid #2affcc;
+}
+
+
+#cont3 .wrap form .cscontent {
     margin-bottom: 80px;
 }
 
-#cont3 .wrap .contbox1 ul li {
-    color:#888;
-    font-size: 14px;
-    list-style: inherit;
-    position: relative;
-    left:20px;
-    line-height: 2;
-}
-
-#cont3 .wrap .sell {
-    margin-bottom: 20px;
-}
-
-#cont3 .wrap .sell figcaption {
-    font-size: 18px;
-    font-weight: 500;
+#cont3 .wrap form .cscontent textarea {
+    background-color: #0E2653;
+    width: 1063px;
+    height: 280px;
+    border:1px solid #888;
+    outline: 0;
+    padding: 5px 10px;
     color:#ddd;
-    margin-left: 6px;
+    font-size: 15px;
+    transition: 0.3s;
+    resize: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#cont3 .wrap form .cscontent textarea:hover, #cont3 .wrap form .cscontent textarea:focus {
+    border:1px solid #2affcc;
+}
+
+textarea::placeholder {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+
+#cont3 .wrap form .termcheck {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+#cont3 .wrap form .termcheck input, #cont3 .wrap form .termcheck label {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+/* 폼 체크박스 이미지로 변환 */
+input[type="checkbox"]+label {
     display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../images/ic-uncheck.png) no-repeat 0 0px / contain;
 }
 
-#cont3 .wrap .contbox2 ul li {
-    color:#888;
-    font-size: 14px;
-    list-style: inherit;
-    position: relative;
-    left:20px;
-    line-height: 2;
+input[type='checkbox']:checked+label {
+    background: url(../images/ic-check.png) no-repeat 0 0px / contain;
+}
+
+input[type="checkbox"] {
+    display: none;
 }
 
 
 
-/* ------------------------이용권 구매 확인 팝업창------------------------ */
-#selltk {
-    position: fixed;
-    z-index:3000;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0,0,0,0.5);
-    top:0;
-    left:0;
-    visibility: hidden;
-    /* 입력한 아이디, 비밀번호의 정보가 틀린 시 visibility: visible; */
-}
-
-#selltk #popup {
-    width: 380px;
-    height: 240px;
-    background-color: #222;
-    border-radius: 5px;
-    position: relative;
-    left:50%;
-    margin-left: -190px;
-    top:50%;
-    margin-top: -120px;
-}
-
-#selltk #popup .header {
-    color:#cfcfcf;
-    font-size: 16px;
-    width: 380px;
-    height: 60px;
-    border-bottom: 1px solid #414141;
-    display:flex;
+#cont3 .wrap form .sendbtn {
     align-items: center;
     justify-content: center;
 }
 
-#selltk #popup .body {
-    color:#cfcfcf;
-    font-size: 16px;
-    width: 380px;
-    height:120px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#selltk #popup .footer {
-    color:#cfcfcf;
-    font-size: 16px;
-    width: 380px;
-    height: 60px;
-    display:flex;
-    align-items: center;
-    justify-content:center;
-}
-
-#selltk #popup .footer button {
-    border:1px solid #cfcfcf;
-    color:#cfcfcf;
-    font-size: 14px;
-    padding: 10px 80px;
+#cont3 .wrap form .sendbtn button {
+    width: 344px;
+    height: 46px;
+    background-color:#2affcc;
+    border:0;
     border-radius: 50px;
-    background-color: #222;
-    position: relative;
-    top:-10px;
+    font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
 }
-
-
-
-
 
 
 /* ------------------------푸터, 웹사이트 정보------------------------ */

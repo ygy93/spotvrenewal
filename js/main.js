@@ -120,6 +120,46 @@
     });
 
 
+// 문의 주제 선택
+//    $(".topic option:eq(1)").click(function(){
+//        $(".subtopic").css({"display":"none"});
+//        $(".useticket").css({"display":"block"});
+//    });
+
+    function optionChange() {
+        var a = ['결제취소', '이용권 문의'];
+        var b = ['연동계정', '비밀번호찾기'];
+        var v = $('.topic').val();
+        var o;
+
+        if (v == '이용권') {
+            o = a;
+        } else if (v == '계정') {
+            o = b;
+        } else {
+            o = [];
+        }
+
+        $( '.subtopic' ).empty();
+        $('.subtopic').append('<option selected>세부주제</option>');
+        for (var i = 0; i < o.length; i++) {
+            $('.subtopic').append('<option>' + o[i] + '</option>');
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

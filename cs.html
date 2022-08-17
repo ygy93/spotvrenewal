@@ -78,60 +78,75 @@
     <section id="cont2">
         <h2 class="blind">1:1 문의, FAQ 링크</h2>
         <div class="wrap">
-            <h3>프리미엄 이용권</h3>
+            <ul class="cslist">
+                <li><a href="#">1:1 문의</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
         </div>
     </section>
 
-    <!-- 이용권 구매 확인 팝업창 -->
-    <section id="selltk">
-        <h2 class="blind">이용권 구매 확인 팝업창</h2>
-        <div id="popup">
-            <div class="header">이용권 구매</div>
-            <div class="body">이용권을 구매 완료하였습니다</div>
-            <div class="footer"><button class="btnck">확인</button></div>
-        </div>
-    </section>
-
-    <!-- 주의사항 -->
+    <!-- 1:1 문의 폼 -->
     <section id="cont3">
         <h2 class="blind">주의사항</h2>
         <div class="wrap">
-            <div class="contbox1">
-                <figure class="service">
-                    <img src="images2/ic-notice.png" alt="주의사항아이콘">
-                    <figcaption>서비스 이용 주의사항</figcaption>
-                </figure>
+            <form action="" method="post" autocomplete="off">
+                <div class="csname">
+                    <label for="csname">이름</label>
+                    <input type="text" id="csname" value="양근영" readonly>
+                </div>
 
-                <ul>
-                    <li>SPOTV NOW는 국내에서만 이용하실 수 있습니다.</li>
-                    <li>SPOTV NOW는 계정 동시접속을 지원하지 않습니다.</li>
-                    <li>SPOTV NOW는  PC, 스마트폰, 스마트TV (삼성/LG 일부모델)를 지원합니다.</li>
-                    <li>프리미엄 이용권으로 지원되는 스마트 TV는 아래의 운영체제가 필요합니다.<br>삼성(Tizen 3.0 이상) / LG(WebOS 4.0 이상) / 이외 제조사 미지원</li>
-                    <li>방송환경에 따라 예정된 실시간 중계가 취소될 수 있습니다.</li>
-                    <li>일부 경기는 VOD(다시보기)가 제공되지 않을 수 있습니다.</li>
-                </ul>
-            </div>
+                <div class="csemail">
+                    <label for="csemail">이메일</label>
+                    <input type="text" value="voalffl93@naver.com" placeholder="spotvnow@spotv.net">
+                    <span>&middot; 답변 받으실 이메일 주소를 입력해 주세요</span>
+                </div>
 
-            <div class="contbox2">
-                <figure class="sell">
-                    <img src="images2/ic-notice.png" alt="주의사항아이콘">
-                    <figcaption>이용권 구매 주의사항</figcaption>
-                </figure>
+                <div class="cstitle">
+                    <label for="cstitle">문의제목</label>
+                    <select class="topic" onchange="optionChange();">
+                        <option selected disabled>주제</option>
+                        <option value="이용권">이용권</option>
+                        <option value="계정">계정</option>
+                    </select>
 
-                <ul>
-                    <li>모든 이용권은 매월 정기결제 되는 상품입니다.</li>
-                    <li>모든 이용권은 부가세(VAT) 별도 입니다.</li>
-                    <li>이용권은 구매한 날짜에 매월 정기결제 됩니다. 결제한 날짜가 다음 달에 없다면 1일로 정기결제일이 변경 됩니다.</li>
-                    <li>베이직에서 프리미엄으로 변경 시 즉시 변경 됩니다.</li>
-                    <li>프리미엄에서 베이직으로 변경 시 다음 정기결제일에 변경 됩니다.</li>
-                    <li>정기결제 당일에는 이용권 변경이 불가합니다.</li>
-                    <li>결제 취소는 '결제일로부터 7일내 사용 이력이 없는 경우'에 가능합니다.</li>
-                    <li>콘텐츠 이용 시 사용일 수를 제외한 부분환불은 어렵습니다.</li>
-                    <li>정기결제 해지는 결제일 이전에 미리 설정해두실 수 있습니다.</li>
-                    <li>고객센터를 통한 취소, 해지 시 본인 확인이 필요합니다.</li>
-                    <li>할인, 쿠폰, 이벤트, 프로모션으로 받은 이용권은 환불되지 않습니다.</li>
-                </ul>
-            </div>
+                    <select class="subtopic">
+                        <option selected disabled>세부주제</option>
+                    </select>
+
+                    <!--
+                    <select class="useticket">
+                        <option selected disabled>세부주제</option>
+                        <option>결제취소</option>
+                        <option>이용권 문의</option>
+                    </select>
+
+                    <select class="userid">
+                        <option selected disabled>세부주제</option>
+                        <option>연동계정</option>
+                        <option>비밀번호찾기</option>
+                    </select>
+                    -->
+                </div>
+
+                <div class="cstitle2">
+                    <input type="text" placeholder="제목을 입력해 주세요">
+                </div>
+
+                <div class="cscontent">
+                    <label for="cscontent">내용</label>
+                    <textarea placeholder="내용을 입력해 주세요" id="cscontent"></textarea>
+                </div>
+
+                <div class="termcheck">
+                    <input type="checkbox" id="termcheck">
+                    <label for="termcheck"></label>
+                    <span>이용약관 및 개인정보취급방침 에 동의합니다</span>
+                </div>
+
+                <div class="sendbtn">
+                    <button type="submit">보내기</button>
+                </div>
+            </form>
         </div>
     </section>
 
