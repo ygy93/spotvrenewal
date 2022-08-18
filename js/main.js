@@ -121,11 +121,6 @@
 
 
 // 문의 주제 선택
-//    $(".topic option:eq(1)").click(function(){
-//        $(".subtopic").css({"display":"none"});
-//        $(".useticket").css({"display":"block"});
-//    });
-
     function optionChange() {
         var a = ['결제취소', '이용권 문의'];
         var b = ['연동계정', '비밀번호찾기'];
@@ -148,10 +143,17 @@
     }
 
 
+// FAQ 게시판 글 리스트 클릭 시 숨겨진 내용 나옴
+    $(".faqlist li").click(function(){
+        //$(".faqtext").removeClass("on");
+        //$(this).next().stop().toggleClass("on");
+        var isrc = $(this).attr("data-src");
 
+        $(".faqicon img").attr("src", isrc);
 
-
-
+        $(".faqtext").slideUp(200);
+        $(this).next().stop().slideToggle(200);
+    });
 
 
 
