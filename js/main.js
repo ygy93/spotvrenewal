@@ -100,8 +100,10 @@
     $(".Modify").click(function(){
         document.getElementById('profname').readOnly = false;
         document.getElementById('profbirth').readOnly = false;
-        document.getElementById('profpre').readOnly = false;
+        document.getElementById('profpw').readOnly = false;
 
+        $(".profile_info").css({"display":"none"});
+        $(".profile_info2").css({"display":"flex"});
         $(".Modify-end").css({"display":"block"});
         $(".Modify-cancel").css({"display":"block"});
         $(".continput li input").css({"background-color":"#0E2653","color":"#fff"});
@@ -112,7 +114,9 @@
     $(".Modify-end, .Modify-cancel").click(function(){
         document.getElementById('profname').readOnly = true;
         document.getElementById('profbirth').readOnly = true;
-        document.getElementById('profpre').readOnly = true;
+        document.getElementById('profpre').disabled = true;
+        document.getElementById('profpw').readOnly = true;
+
 
         $(".Modify-end").css({"display":"none"});
         $(".Modify-cancel").css({"display":"none"});

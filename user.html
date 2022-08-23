@@ -90,9 +90,6 @@
             </div>
 
             <!-- 프로필 정보, 연락처 -->
-            <button type="button" class="Modify"></button>
-            <button type="button" class="Modify-end"></button>
-
             <div class="profile_info">
                 <div class="title"><span>프로필 정보</span></div>
                 <div class="content">
@@ -111,6 +108,9 @@
 
                         <input type="reset" class="Modify-cancel" value="">
 
+                        <button type="button" class="Modify"></button>
+            <button type="button" class="Modify-end"></button>
+
                         <ul class="continput">
                             <li>
                                 <input type="text" id="profname" value="양*영" readonly>
@@ -119,12 +119,68 @@
                                 <input type="text" id="profbirth" value="199*.**.** / 남" readonly>
                             </li>
                             <li>
-                                <input type="text" id="profpre" value="축구" readonly>
+                                <input type="text" value="축구">
                             </li>
                         </ul>
                     </form>
                 </div>
             </div>
+
+
+            <!-- 프로필 정보, 연락처 2 -->
+            <div class="profile_info2">
+                <div class="title"><span>프로필 정보</span></div>
+                <div class="content">
+                    <form action="user.html" method="get" autocomplete="off">
+                        <ul class="contlabel">
+                            <li>
+                                <label for="profname">이름</label>
+                            </li>
+                            <li>
+                                <label for="profbirth">생년월일</label>
+                            </li>
+                            <li>
+                                <label for="profpre">선호종목</label>
+                            </li>
+                            <li>
+                                <label for="profpw">비밀번호</label>
+                            </li>
+                            <li>
+                                <label for="profpwck">비밀번호 확인</label>
+                            </li>
+                        </ul>
+
+                        <input type="reset" class="Modify-cancel" value="">
+
+                        <button type="button" class="Modify"></button>
+            <button type="submit" class="Modify-end"></button>
+
+                        <ul class="continput">
+                            <li>
+                                <input type="text" id="profname" value="양*영">
+                            </li>
+                            <li>
+                                <input type="text" id="profbirth" value="199*.**.** / 남">
+                            </li>
+                            <li>
+                                <select id="profpre">
+                                    <option>축구</option>
+                                    <option>농구</option>
+                                    <option>야구</option>
+                                </select>
+                            </li>
+                            <li>
+                                <input type="password" id="profpw" value="">
+                            </li>
+                            <li>
+                                <input type="password" id="profpwck" value="">
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+
+
 
             <div class="contact">
                 <div class="title"><span>연락처</span></div>

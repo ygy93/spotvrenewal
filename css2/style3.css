@@ -303,7 +303,7 @@ header nav #snb .user_icon .user_info .user_item li a:hover {
 }
 
 
-
+/* 프로필 정보, 연락처 */
 #cont2 .wrap .profile_info {
     display: flex;
     justify-content:flex-start;
@@ -349,6 +349,70 @@ header nav #snb .user_icon .user_info .user_item li a:hover {
     outline: 0;
     color:#888;
 }
+
+
+
+
+
+/* 프로필 정보, 연락처 2 */
+#cont2 .wrap .profile_info2 {
+    display: none;
+    justify-content:flex-start;
+    flex-direction:row;
+    padding: 30px 0;
+}
+
+#cont2 .wrap .profile_info2 .content .contlabel {
+    display: inline-block;
+    width: 90px;
+}
+
+#cont2 .wrap .profile_info2 .content .contlabel li {
+    color:#fff;
+    font-size: 14px;
+    margin-bottom: 48px;
+}
+
+#cont2 .wrap .profile_info2 .content .contlabel li:last-of-type {
+    margin-bottom: 0;
+}
+
+
+
+#cont2 .wrap .profile_info2 .content .continput {
+    display: inline-block;
+}
+
+#cont2 .wrap .profile_info2 .content .continput li {
+    color:#888;
+    font-size: 14px;
+    margin-left: 76px;
+    margin-bottom: 46px;
+}
+
+#cont2 .wrap .profile_info2 .content .continput li:last-of-type {
+    margin-bottom: 0;
+}
+
+#cont2 .wrap .profile_info2 .content .continput li input {
+    background-color: #102D61;
+    border:0;
+    outline: 0;
+    color:#888;
+}
+
+#cont2 .wrap .profile_info2 .content .continput li select {
+    background-color: #0E2653;
+    padding: 5px 10px;
+    width: 130px;
+    height: 30px;
+    color:#ddd;
+    outline: 0;
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+
 
 
 
