@@ -100,8 +100,10 @@
     $(".Modify").click(function(){
         document.getElementById('profname').readOnly = false;
         document.getElementById('profbirth').readOnly = false;
+        // document.getElementById('profpre').disabled = false;
         document.getElementById('profpw').readOnly = false;
 
+        $(".Modify").css({"display":"none"});
         $(".profile_info").css({"display":"none"});
         $(".profile_info2").css({"display":"flex"});
         $(".Modify-end").css({"display":"block"});
@@ -111,7 +113,7 @@
 
 
 // 수정완료를 누르면 적용, 취소를 누르면 초기화되며 input readonly 활성화
-    $(".Modify-end, .Modify-cancel").click(function(){
+    $(".Modify-end").click(function(){
         document.getElementById('profname').readOnly = true;
         document.getElementById('profbirth').readOnly = true;
         document.getElementById('profpre').disabled = true;

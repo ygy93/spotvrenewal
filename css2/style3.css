@@ -276,7 +276,7 @@ header nav #snb .user_icon .user_info .user_item li a:hover {
 
 #cont2 .wrap .Modify-end {
     position: absolute;
-    top:36%;
+    top:31%;
     right:0;
     z-index: 1500;
     background:url(../images2/complete_modify.png) no-repeat center;
@@ -290,7 +290,7 @@ header nav #snb .user_icon .user_info .user_item li a:hover {
 
 #cont2 .wrap .Modify-cancel {
     position: absolute;
-    top:36%;
+    top:31%;
     right:10%;
     z-index: 1500;
     background:url(../images2/cancel.png) no-repeat center;
